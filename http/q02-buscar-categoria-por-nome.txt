@@ -1,0 +1,12 @@
+GET /categoria?nome=Eletr HTTP/1.1
+Host: vasscommerce.com.br
+Accept: application/json
+
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 130
+
+[
+  { "id": 1, "imagemSimboloUrl": "http://vasscommerce.com.br/img/eletronicos.png", "nome": "Eletrônicos", "descricao": "Celulares, notebooks e acessórios" }
+]

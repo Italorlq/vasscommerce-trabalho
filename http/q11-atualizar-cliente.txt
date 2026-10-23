@@ -1,0 +1,28 @@
+PUT /cliente/5 HTTP/1.1
+Host: vasscommerce.com.br
+Content-Type: application/json
+Accept: application/json
+Content-Length: 215
+
+{
+  "nomeCompleto": "Maria Souza Lima Santos",
+  "email": "maria.santos@email.com",
+  "fotoUrl": "http://vasscommerce.com.br/img/maria-nova.png",
+  "dataNascimento": "1995-04-12",
+  "cpf": "12345678900"
+}
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 330
+
+{
+  "id": 5,
+  "nomeCompleto": "Maria Souza Lima Santos",
+  "email": "maria.santos@email.com",
+  "fotoUrl": "http://vasscommerce.com.br/img/maria-nova.png",
+  "dataNascimento": "1995-04-12",
+  "cpf": "12345678900",
+  "dataCadastro": "2026-09-20T08:00:00",
+  "dataUltimaAtualizacao": "2026-10-23T12:00:00"
+}

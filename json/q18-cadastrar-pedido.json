@@ -1,0 +1,10 @@
+{
+  "idCliente": 5,
+  "itens": [
+    { "idProduto": 10, "quantidade": 2 }
+  ],
+  "pagamentos": [
+    { "idCartao": 3, "valorPago": 5000.00 },
+    { "idCartao": 4, "valorPago": 4000.00 }
+  ]
+}

@@ -1,0 +1,28 @@
+POST /produto HTTP/1.1
+Host: vasscommerce.com.br
+Content-Type: application/json
+Accept: application/json
+Content-Length: 158
+
+{
+  "nome": "Tablet Pro",
+  "descricao": "Tablet com tela de 11 polegadas",
+  "fotoUrl": "http://vasscommerce.com.br/img/tablet.png",
+  "valorUnitario": 3200.00,
+  "idCategoria": 1
+}
+
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 290
+Location: /produto/12
+
+{
+  "id": 12,
+  "nome": "Tablet Pro",
+  "descricao": "Tablet com tela de 11 polegadas",
+  "fotoUrl": "http://vasscommerce.com.br/img/tablet.png",
+  "dataCadastro": "2026-10-23T11:00:00",
+  "dataUltimaAtualizacao": "2026-10-23T11:00:00",
+  "valorUnitario": 3200.00
+}

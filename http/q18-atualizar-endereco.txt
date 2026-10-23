@@ -1,0 +1,40 @@
+PUT /cliente/5/endereco HTTP/1.1
+Host: vasscommerce.com.br
+Content-Type: application/json
+Accept: application/json
+Content-Length: 170
+
+{
+  "rua": "Avenida Principal",
+  "numero": 450,
+  "cep": "27600100",
+  "complemento": "Casa",
+  "telefone": 24999998888,
+  "bairro": "Jardim",
+  "idCidade": 1
+}
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 430
+
+{
+  "id": 1,
+  "rua": "Avenida Principal",
+  "numero": 450,
+  "cep": "27600100",
+  "complemento": "Casa",
+  "telefone": 24999998888,
+  "bairro": "Jardim",
+  "cidade": {
+    "id": 1,
+    "nome": "Valença",
+    "estado": {
+      "id": 19,
+      "sigla": "RJ",
+      "nome": "Rio de Janeiro"
+    }
+  },
+  "dataCadastro": "2026-09-20T08:00:00",
+  "dataUltimaAtualizacao": "2026-10-23T13:00:00"
+}

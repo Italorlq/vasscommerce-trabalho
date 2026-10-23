@@ -1,0 +1,28 @@
+GET /categoria/1/produto HTTP/1.1
+Host: vasscommerce.com.br
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 520
+
+[
+  {
+    "id": 10,
+    "nome": "Notebook Gamer",
+    "descricao": "Notebook com placa de vídeo dedicada",
+    "fotoUrl": "http://vasscommerce.com.br/img/notebook.png",
+    "dataCadastro": "2026-10-01T10:30:00",
+    "dataUltimaAtualizacao": "2026-10-15T14:00:00",
+    "valorUnitario": 4500.00
+  },
+  {
+    "id": 11,
+    "nome": "Smartphone X",
+    "descricao": "Smartphone com 128 GB de memória",
+    "fotoUrl": "http://vasscommerce.com.br/img/smartphone.png",
+    "dataCadastro": "2026-10-02T09:15:00",
+    "dataUltimaAtualizacao": "2026-10-10T16:45:00",
+    "valorUnitario": 2300.00
+  }
+]

@@ -1,0 +1,27 @@
+GET /cliente/5/pedido?datainicio=2026-10-01&datafinal=2026-10-10 HTTP/1.1
+Host: vasscommerce.com.br
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 540
+
+[
+  {
+    "id": 87,
+    "dataCadastro": "2026-10-02T09:30:00",
+    "valorTotal": 2300.00,
+    "status": { "id": 4, "nome": "ENTREGUE_CLIENTE" },
+    "itens": [
+      {
+        "id": 2,
+        "produto": { "id": 11, "nome": "Smartphone X" },
+        "quantidade": 1,
+        "valorUnitario": 2300.00
+      }
+    ],
+    "pagamentos": [
+      { "id": 3, "idCartao": 3, "valorPago": 2300.00 }
+    ]
+  }
+]

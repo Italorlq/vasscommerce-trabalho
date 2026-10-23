@@ -1,0 +1,24 @@
+POST /cliente/5/formas-de-pagamento HTTP/1.1
+Host: vasscommerce.com.br
+Content-Type: application/json
+Accept: application/json
+Content-Length: 21
+
+{
+  "idTipoCartao": 2
+}
+
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 120
+Location: /cliente/5/formas-de-pagamento/3
+
+{
+  "id": 3,
+  "dataCriacao": "2026-10-23T12:30:00",
+  "excluido": false,
+  "tipo": {
+    "id": 2,
+    "nome": "CREDITO"
+  }
+}

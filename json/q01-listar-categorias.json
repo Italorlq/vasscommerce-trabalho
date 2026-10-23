@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "imagemSimboloUrl": "http://vasscommerce.com.br/img/eletronicos.png",
+    "nome": "Eletrônicos",
+    "descricao": "Celulares, notebooks e acessórios"
+  },
+  {
+    "id": 2,
+    "imagemSimboloUrl": "http://vasscommerce.com.br/img/livros.png",
+    "nome": "Livros",
+    "descricao": "Livros técnicos e literatura"
+  }
+]

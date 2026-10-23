@@ -1,0 +1,19 @@
+GET /categoria/1/produto?nome=Note&valorMinimo=1000&valorMaximo=5000 HTTP/1.1
+Host: vasscommerce.com.br
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 270
+
+[
+  {
+    "id": 10,
+    "nome": "Notebook Gamer",
+    "descricao": "Notebook com placa de vídeo dedicada",
+    "fotoUrl": "http://vasscommerce.com.br/img/notebook.png",
+    "dataCadastro": "2026-10-01T10:30:00",
+    "dataUltimaAtualizacao": "2026-10-15T14:00:00",
+    "valorUnitario": 4500.00
+  }
+]

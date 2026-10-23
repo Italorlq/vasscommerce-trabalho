@@ -1,0 +1,13 @@
+GET /estado HTTP/1.1
+Host: vasscommerce.com.br
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 150
+
+[
+  { "id": 19, "sigla": "RJ", "nome": "Rio de Janeiro" },
+  { "id": 25, "sigla": "SP", "nome": "São Paulo" },
+  { "id": 13, "sigla": "MG", "nome": "Minas Gerais" }
+]

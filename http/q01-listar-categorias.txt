@@ -1,0 +1,12 @@
+GET /categoria HTTP/1.1
+Host: vasscommerce.com.br
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 245
+
+[
+  { "id": 1, "imagemSimboloUrl": "http://vasscommerce.com.br/img/eletronicos.png", "nome": "Eletrônicos", "descricao": "Celulares, notebooks e acessórios" },
+  { "id": 2, "imagemSimboloUrl": "http://vasscommerce.com.br/img/livros.png", "nome": "Livros", "descricao": "Livros técnicos e literatura" }
+]

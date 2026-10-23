@@ -1,0 +1,40 @@
+POST /pedido HTTP/1.1
+Host: vasscommerce.com.br
+Content-Type: application/json
+Accept: application/json
+Content-Length: 190
+
+{
+  "idCliente": 5,
+  "itens": [
+    { "idProduto": 10, "quantidade": 2 }
+  ],
+  "pagamentos": [
+    { "idCartao": 3, "valorPago": 5000.00 },
+    { "idCartao": 4, "valorPago": 4000.00 }
+  ]
+}
+
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 620
+Location: /pedido/100
+
+{
+  "id": 100,
+  "dataCadastro": "2026-10-23T14:00:00",
+  "valorTotal": 9000.00,
+  "status": { "id": 1, "nome": "AGUARDANDO_PAGAMENTO" },
+  "itens": [
+    {
+      "id": 1,
+      "produto": { "id": 10, "nome": "Notebook Gamer" },
+      "quantidade": 2,
+      "valorUnitario": 4500.00
+    }
+  ],
+  "pagamentos": [
+    { "id": 1, "idCartao": 3, "valorPago": 5000.00 },
+    { "id": 2, "idCartao": 4, "valorPago": 4000.00 }
+  ]
+}

@@ -1,0 +1,23 @@
+PUT /cliente/5/formas-de-pagamento/3 HTTP/1.1
+Host: vasscommerce.com.br
+Content-Type: application/json
+Accept: application/json
+Content-Length: 21
+
+{
+  "idTipoCartao": 1
+}
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 118
+
+{
+  "id": 3,
+  "dataCriacao": "2026-10-23T12:30:00",
+  "excluido": false,
+  "tipo": {
+    "id": 1,
+    "nome": "DEBITO"
+  }
+}

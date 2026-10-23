@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3,
+    "dataCriacao": "2026-10-23T12:30:00",
+    "excluido": false,
+    "tipo": {
+      "id": 2,
+      "nome": "CREDITO"
+    }
+  },
+  {
+    "id": 4,
+    "dataCriacao": "2026-10-10T09:00:00",
+    "excluido": false,
+    "tipo": {
+      "id": 1,
+      "nome": "DEBITO"
+    }
+  }
+]
